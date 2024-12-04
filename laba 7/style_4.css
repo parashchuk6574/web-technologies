@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.logo-div {
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.logo > img {
+  width: 40px;
+}
+
+.tasks {
+  float: right;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  list-style: none;
+}
+
+.tasks li {
+  float: left;
+  margin: 0 10px;
+}
+
+.tasks a {
+  display: block;
+  padding: 20px 30px;
+  text-align: center;
+  background-color: blueviolet;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.horizontal-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.horizontal-nav li {
+  position: relative;
+}
+
+.home-icon {
+  background-color: green;
+}
+
+.horizontal-nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.horizontal-nav a:hover {
+  background-color: #555;
+}
+
+.horizontal-nav .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-nav li:hover .dropdown {
+  display: block;
+}
+
+.horizontal-dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: flex;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-dropdown li {
+  margin: 0;
+}
+
+.horizontal-dropdown a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #444;
+  display: block;
+}
+
+.horizontal-dropdown a:hover {
+  background-color: #555;
+}
+
+.family:hover .horizontal-dropdown,
+.work:hover .horizontal-dropdown,
+.friends:hover .horizontal-dropdown {
+  display: block;
+}
+
+.horizontal-nav .dropdown li a {
+  padding: 10px 20px;
+  width: 200px;
+}
+
+.right-float {
+  margin-left: auto;
+}
+
+.vertical-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical-nav li {
+  position: relative;
+}
+
+.vertical-nav a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.vertical-nav img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.vertical-nav a:hover {
+  background-color: #555;
+}
+
+.vertical-nav .dropdown {
+  display: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.vertical-nav li:hover .dropdown {
+  display: block;
+}
+
+.material-icons {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.horizontal-nav.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.text {
+  position: absolute;
+  top: 700px;
+}
+
+.horizontal-nav {
+  position: fixed;
+  top: 269px;
+  width: 300px;
+  background-color: #333;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border: 2px solid green;
+}
+
+.vertical-nav {
+  position: fixed;
+  left: 0;
+  top: 320px;
+  width: 300px;
+  height: 320px;
+  background-color: #222;
+  padding-top: 20px;
+}
+
+.horizontal-dropdown.wife {
+  display: none;
+}
+
+.horizontal-dropdown.workua {
+  display: none;
+}
+
+.horizontal-dropdown.bestfriend {
+  display: none;
+}
